@@ -1,0 +1,1 @@
+Not Selected Tab is visible and test-case passed successfully.

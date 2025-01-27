@@ -1,0 +1,1 @@
+Selling Skills Direct Sales Tab is visible and test-case passed successfully..

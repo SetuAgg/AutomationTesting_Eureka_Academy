@@ -1,0 +1,1 @@
+Password is not visible before eye patch click and test-case passed successfully..

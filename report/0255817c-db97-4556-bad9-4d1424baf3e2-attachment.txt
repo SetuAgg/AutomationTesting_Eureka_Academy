@@ -1,0 +1,1 @@
+Session Tab Header Text i.e 'Schedule' is visible and test-case passed successfully..

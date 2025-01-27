@@ -1,0 +1,1 @@
+Password is visible after eye patch click and test-case passed successfully..

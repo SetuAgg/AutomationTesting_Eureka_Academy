@@ -1,0 +1,1 @@
+SS Tank and Vector Weekly Assessment Tab is visible and test-case passed successfully..

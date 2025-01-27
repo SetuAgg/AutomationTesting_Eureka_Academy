@@ -1,0 +1,1 @@
+Forgot Password Text is displayed and verified with highlight and test-case passed successfully..

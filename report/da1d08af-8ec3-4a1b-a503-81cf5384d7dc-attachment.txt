@@ -1,0 +1,1 @@
+Slider Section is visible and test-case passed successfully..
