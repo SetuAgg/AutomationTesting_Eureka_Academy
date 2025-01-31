@@ -83,27 +83,8 @@ class Test_05_Eureka_Assessments_Tab:
                 except AssertionError:
                     allure.attach(self.driver.get_screenshot_as_png(), name=f'{element["name"]}_visibility',
                                   attachment_type=allure.attachment_type.PNG)
-                    allure.attach(element["failure_message"], name=f"{element['name']}_Visibility",
-                                  attachment_type=allure.attachment_type.TEXT)
-
-        # Close the driver
-        self.driver.close()
-
-
-    def test_assessments_tab_buttons(self, setup):
-        self.driver = setup
-        self.driver.get(self.page_url)
-        time.sleep(3)
-        self.driver.maximize_window()
-        time.sleep(3)
-        self.main_screen = Eureka_Main_Screen(self.driver)
-        self.main_screen.enter_username(self.username)
-        self.main_screen.enter_password(self.password)
-        self.main_screen.click_login_button()
-        time.sleep(3)
-        self.main_screen.click_assessment_tab()
-        time.sleep(3)
-
+                    allure.attach(element["failure_message"], name=f"{element['name']}_Visibility", attachment_type=allure.attachment_type.TEXT)
+                time.sleep(3)
         # Use soft assertions
         with soft_assertions():
             actions = [
@@ -144,7 +125,7 @@ class Test_05_Eureka_Assessments_Tab:
                 # Find and highlight element
                 element = self.driver.find_element(By.XPATH, action["locator"])
                 self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", element)
-                self.driver.execute_script("arguments[0].style.border='5px solid blue'", element)
+                self.driver.execute_script("arguments[0].style.border='5px solid pink'", element)
                 time.sleep(2)
 
                 # Perform visibility check

@@ -7,6 +7,7 @@ class Eureka_Login_Page:
     textbox_username_name = "email"
     textbox_password_id = "passInput"
     login_btn_Xpath = '//button[@class="eureka_submit_btn_block "]'
+    forgot_pass_close_btn = '//button[@class="btn-close"]'
 
     def __init__(self,driver):
         self.driver = driver
@@ -29,6 +30,9 @@ class Eureka_Login_Page:
 
     def click_eye_patch_button(self):
         self.driver.find_element(By.XPATH,'//div[@class="show-password"]').click()
+
+    def click_forgot_password_close_button(self):
+        self.driver.find_element(By.XPATH,self.forgot_pass_close_btn).click()
 
 
 
