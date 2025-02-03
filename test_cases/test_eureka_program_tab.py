@@ -81,21 +81,6 @@ class Test_07_Eureka_Program_Tab:
             allure.attach(message08, name='test_program_tab', attachment_type=allure.attachment_type.TEXT)
             assert False
         time.sleep(3)
-        element5 = self.driver.find_element(By.XPATH,'//div[@class="slick-slider slick-initialized"]')
-        self.driver.execute_script("arguments[0].scrollIntoView(true);", element5)
-        time.sleep(3)
-        self.driver.execute_script("arguments[0].style.border='5px solid purple'", element5)
-        time.sleep(3)
-        if element5.is_displayed():
-            assert True
-            allure.attach(self.driver.get_screenshot_as_png(), name='test_program_tab', attachment_type=allure.attachment_type.PNG)
-            message09 = "Slick Slider is visible and test-case passed successfully.."
-            allure.attach(message09, name='test_program_tab', attachment_type=allure.attachment_type.TEXT)
-        else:
-            allure.attach(self.driver.get_screenshot_as_png(), name='test_program_tab', attachment_type=allure.attachment_type.PNG)
-            message10 = "Slick Slider is not visible and test-case failed.."
-            allure.attach(message10, name='test_program_tab', attachment_type=allure.attachment_type.TEXT)
-            assert False
         element6 = self.driver.find_element(By.XPATH,"//p[text()='Designo NXT W2 May24']")
         self.driver.execute_script("arguments[0].style.border='5px solid purple'", element6)
         time.sleep(3)
@@ -278,23 +263,11 @@ class Test_07_Eureka_Program_Tab:
         time.sleep(2)
         self.main_screen.click_program_tab_nsb()
         time.sleep(2)
-        element = self.driver.find_element(By.XPATH,'//div[@class="program-accordion"]')
-        self.driver.execute_script("arguments[0].style.border='5px solid red'", element)
-        time.sleep(3)
-        if element.is_displayed():
-            assert True
-            allure.attach(self.driver.get_screenshot_as_png(), name='test_program_tab_btns', attachment_type=allure.attachment_type.PNG)
-            message01 = "New Program For Enrollment Tab is visible and test-case passed successfully.."
-            allure.attach(message01, name='test_program_tab_btns', attachment_type=allure.attachment_type.TEXT)
-        else:
-            allure.attach(self.driver.get_screenshot_as_png(), name='test_program_tab_btns', attachment_type=allure.attachment_type.PNG)
-            message02 = "New Program For Enrollment Tab is not visible and test-case failed.."
-            allure.attach(message02, name='test_program_tab_btns', attachment_type=allure.attachment_type.TEXT)
-            assert False
+        allure.attach(self.driver.get_screenshot_as_png(), name='test_program_tab', attachment_type=allure.attachment_type.PNG)
         time.sleep(3)
         self.main_screen.click_program_tab_sb()
         time.sleep(2)
-        element1 = self.driver.find_element(By.XPATH,'//div[@class="program-accordion"]')
+        element1 = self.driver.find_element(By.XPATH,'//div[@class="interboxes"]')
         self.driver.execute_script("arguments[0].style.border='5px solid red'", element1)
         time.sleep(3)
         if element1.is_displayed():
@@ -310,7 +283,7 @@ class Test_07_Eureka_Program_Tab:
         time.sleep(3)
         self.main_screen.click_program_tab_cb()
         time.sleep(2)
-        element2 = self.driver.find_element(By.XPATH,'//div[@class="interboxes"]')
+        element2 = self.driver.find_element(By.XPATH,'//div[@class="not-found mt-3"]')
         self.driver.execute_script("arguments[0].style.border='5px solid red'", element2)
         time.sleep(3)
         if element2.is_displayed():

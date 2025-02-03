@@ -20,7 +20,7 @@ class Eureka_Main_Screen:
     session_tab_week_btn = '//button[@class="btn btn-primary btn-block setup-button upgrate_colpeteBtn mr-2 active"]'
     session_tab_back_btn = '//button[@class="btn btn-primary bckbtn"]'
     program_tab = "//a[text()='Program']"
-    program_tab_nsb = '//button[@class=" active nav-link"]'
+    program_tab_nsb = "//button[text()='Not started']"
     program_tab_sb = "//button[text()='Started']"
     program_tab_cb = "//button[text()='Completed']"
     program_tab_back_btn = '//button[@class="bckbtn"]'

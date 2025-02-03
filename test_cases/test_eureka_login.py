@@ -33,6 +33,7 @@ class Test_01_Eureka_Login:
         time.sleep(3)
         act_success_login = self.driver.find_element(By.XPATH,self.success_login_Xpath)
         self.driver.execute_script("arguments[0].style.border='5px solid red'", act_success_login)
+        time.sleep(2)
         if act_success_login.is_displayed():
             assert True
             allure.attach(self.driver.get_screenshot_as_png(), name='test_valid_login', attachment_type=AttachmentType.PNG)

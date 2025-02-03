@@ -1,1 +1,0 @@
-Tabs are visible and test-case passed successfully..

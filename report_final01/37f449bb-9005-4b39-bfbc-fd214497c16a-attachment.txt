@@ -1,1 +1,0 @@
-Forgot Password Dialog is displayed and test-case passed successfully..

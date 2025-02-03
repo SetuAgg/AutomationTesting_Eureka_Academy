@@ -1,1 +1,0 @@
-'Day' named button is visible and test-case passed successfully..

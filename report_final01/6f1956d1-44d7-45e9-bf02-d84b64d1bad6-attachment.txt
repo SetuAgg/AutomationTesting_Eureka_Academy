@@ -1,1 +1,0 @@
-Page Title i.e 'Eureka Forbes Academy' is matching with expected value and test-case passed successfully..
